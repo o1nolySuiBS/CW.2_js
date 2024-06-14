@@ -38,7 +38,7 @@ getUserDetails(userDetails)
 
         displayInfo(user);
 
-        // Додаємо mainDiv до тіла документу
+
         document.body.appendChild(mainDiv);
 
 // 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
@@ -50,14 +50,14 @@ getUserDetails(userDetails)
         titleBtn.classList.add("btnForTitle");
         titleBtn.innerHTML = 'User posts';
 
-// Додаємо кнопку в div і div до тіла документу
+
         divBtn.appendChild(titleBtn);
         mainDiv.appendChild(divBtn);
 
         titleBtn.addEventListener("click", () => {
             getUserPosts(userDetails)
                 .then((userPosts) => {
-                    // Очищаємо div, щоб уникнути дублювання заголовків
+
                     divBtn.innerHTML = '';
                     divBtn.appendChild(titleBtn);
 
