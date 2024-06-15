@@ -43,10 +43,10 @@ getUserDetails(userDetails)
 
 // 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
 
-        let divBtn = document.createElement("div");
+        const divBtn = document.createElement("div");
         divBtn.classList.add("divForBtn");
 
-        let titleBtn = document.createElement("button");
+        const titleBtn = document.createElement("button");
         titleBtn.classList.add("btnForTitle");
         titleBtn.innerHTML = 'User posts';
 
@@ -62,7 +62,7 @@ getUserDetails(userDetails)
                     divBtn.appendChild(titleBtn);
 
                     userPosts.forEach((post) => {
-                        let titlePost = document.createElement("h5");
+                        const titlePost = document.createElement("h5");
                         titlePost.innerHTML = post.title;
 
                         titlePost.addEventListener("click", () => {
@@ -81,6 +81,6 @@ getUserDetails(userDetails)
         console.error('Помилка при отриманні деталей користувача:', error);
     });
 
-// (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
+//a (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
 //     6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
 
