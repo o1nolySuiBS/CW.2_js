@@ -15,7 +15,7 @@ async function ShowUsers(){
         let divAll = document.createElement("div")
         divAll.classList.add("FirstBlock")
         divAll.style.display = "flex"
-        divAll.style.backgroundColor = "RoyalBlue"
+
 
 
 
@@ -32,6 +32,7 @@ async function ShowUsers(){
         divForInfo.style.justifyContent = "space-between"
         divForInfo.style.border ="1px solid blue"
         divForInfo.style.borderRadius = "10px"
+
 
 
         divForInfo.innerHTML = `${user.id}. ${user.name}`
