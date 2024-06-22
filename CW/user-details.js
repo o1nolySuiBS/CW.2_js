@@ -107,10 +107,10 @@ getUserDetails(userDetails)
                         postsContainer.style.border ="1px solid blue"
 
 
-                        userPosts.forEach((post) => {
+                        userPosts.forEach((post, index) => {
                             const titlePost = document.createElement("div");
                             titlePost.style.paddingLeft="15px"
-                            titlePost.innerHTML = post.title;
+                            titlePost.innerHTML =`${index + 1}. ${post.title}`;
                             titlePost.style.cursor = "pointer";
                             titlePost.style.margin = "5px 0";
 
