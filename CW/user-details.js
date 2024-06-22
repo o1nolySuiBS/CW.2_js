@@ -34,6 +34,7 @@ getUserDetails(userDetails)
         DivForDetail.style.marginTop="1vh"
         DivForDetail.style.display="flex"
         DivForDetail.style.flexDirection="column"
+        DivForDetail.style.border ="1px solid blue"
 
 
         mainDiv.appendChild(DivForDetail)
@@ -47,6 +48,7 @@ getUserDetails(userDetails)
                         const userDetail = document.createElement("div");
                         userDetail.style.marginTop="3px"
                         userDetail.style.paddingLeft ="15px"
+
                         userDetail.textContent = `${fullKey}: ${obj[key]}`;
                         DivForDetail.appendChild(userDetail);
                     }
@@ -102,7 +104,7 @@ getUserDetails(userDetails)
                         postsContainer.style.margintop ="5px"
                         postsContainer.style.borderRadius="15px"
                         postsContainer.style.marginTop="1vh"
-
+                        postsContainer.style.border ="1px solid blue"
 
 
                         userPosts.forEach((post) => {
